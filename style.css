@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #242f3f;
+}
+
+.light {
+    background-color: #ddd;
+}
+
+.butttom {
+    height: 100px;
+    /* change size */
+    width: 200px;
+    /* change size */
+    border: 3px solid white;
+    margin: 20% auto;
+    border-radius: 50px;
+    /* change border radius */
+    display: grid;
+    align-items: center;
+}
+
+.butttom:hover {
+    background-color: rgba(221, 221, 221, 0.075);
+}
+
+
+.butttom input {
+    position: absolute;
+    opacity: 0;
+    height: 100px;
+    /* change size */
+    width: 200px;
+    /* change size */
+    cursor: pointer;
+}
+
+.roda {
+    margin-left: 10px;
+    /* change margin left */
+    height: 80px;
+    /* change size */
+    width: 80px;
+    /* change size */
+    position: absolute;
+    cursor: pointer;
+    transition: .4s;
+    /* change roda transition*/
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: #5a5a5a;
+}
+
+
+input:checked+.roda {
+    transform: translateX(100px);
+    /* change roda moved */
+    background-color: rgb(255, 255, 255);
+}
